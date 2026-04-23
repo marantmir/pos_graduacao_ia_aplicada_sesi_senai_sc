@@ -2,8 +2,6 @@
 
 # 📘 Séries Temporais, RNN, LSTM e GRU — Guia Completo para Pós-Graduação
 
-📎 Baseado na aula: 
-
 ---
 
 # 🎯 1. Objetivo deste material
