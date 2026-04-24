@@ -519,21 +519,140 @@ Em séries temporais, usar dados futuros no treino é como olhar o gabarito ante
 
 ---
 
-# 🔗 6. Dependência Temporal
+# 5.7 Correlação em séries temporais
 
-## 💡 Conceito-chave:
+A correlação mede o grau de relação entre duas variáveis.
 
-> O passado influencia o futuro
+Mas em séries temporais, a correlação precisa ser analisada com cuidado.
 
-Exemplo:
+---
+## Por que a correlação comum pode enganar?
 
-> “O carro parou porque o sinal estava vermelho”
+Imagine duas séries:
 
-Se ignorarmos o passado, perdemos o contexto.
+- Número de usuários de internet no mundo;
+- Venda de smartphones.
+
+Ambas cresceram ao longo do tempo.
+
+A correlação entre elas pode ser alta, mas isso não significa necessariamente que uma causa diretamente a outra.
+
+Elas podem estar correlacionadas apenas porque ambas têm tendência crescente.
+
+---
+
+## Analogia
+
+É como observar que o número de sorvetes vendidos e o número de pessoas na praia aumentam no verão.
+
+Há correlação, mas o fator principal pode ser a temperatura, não uma relação direta entre sorvete e praia.
+
+---
+
+## Autocorrelação
+
+Autocorrelação é a correlação de uma série com ela mesma em momentos anteriores.
+
+## Exemplo
+
+A temperatura de hoje pode estar relacionada com a temperatura de ontem.
+
+Se ontem estava muito quente, talvez hoje também esteja.
+
+Isso é autocorrelação.
+
+---
+
+## Correlação cruzada
+
+A correlação cruzada mede a relação entre duas séries temporais considerando deslocamentos no tempo.
+
+## Exemplo prático
+
+Imagine duas séries:
+
+- Investimento em marketing;
+- Vendas.
+
+Talvez o investimento feito hoje não aumente as vendas hoje, mas sim daqui a 7 dias.
+
+A correlação cruzada ajuda a descobrir esse atraso.
+
+---
+
+## Analogia
+
+É como plantar uma semente.
+
+Você planta hoje, mas a planta não nasce imediatamente.
+
+O efeito aparece depois.
+
+Em séries temporais, muitos eventos funcionam assim: uma causa pode gerar efeito com atraso.
+
+---
+
+# 🔗 6. Estacionariedade
+
+Uma série é considerada **estacionária** quando suas propriedades estatísticas permanecem relativamente constantes ao longo do tempo.
+
+De forma simples, uma série estacionária não muda completamente de comportamento conforme o tempo passa.
+
+---
+
+## Por que estacionariedade importa?
+
+Alguns modelos, como ARIMA e SARIMA, funcionam melhor quando a série é estacionária.
+
+Se a série tem tendência forte ou sazonalidade não tratada, o modelo pode interpretar mal os padrões.
+
+---
+
+## Exemplo intuitivo
+
+Imagine tentar prever o comportamento de uma pessoa.
+
+Se essa pessoa mantém uma rotina estável, é mais fácil prever seus hábitos.
+
+Mas se ela muda completamente de rotina toda semana, a previsão fica muito mais difícil.
+
+Com séries temporais é parecido.
+
+---
+
+## Diferenças, ou differencing
+
+Uma forma comum de tornar uma série mais estacionária é calcular diferenças entre valores consecutivos.
+
+Em vez de analisar o valor absoluto, analisamos a variação.
+
+## Exemplo
+
+| Dia | Valor | Diferença |
+|---|---:|---:|
+| 1 | 100 | - |
+| 2 | 110 | 10 |
+| 3 | 125 | 15 |
+| 4 | 130 | 5 |
+
+A série original mostra crescimento.  
+A série diferenciada mostra quanto cresceu de um dia para o outro.
+
+---
+
+## 💡 Analogia
+
+Se o valor absoluto é a posição de um carro na estrada, a diferença é a velocidade.
+
+Às vezes, para entender o comportamento, a velocidade é mais importante que a posição.
 
 ---
 
 # ❌ 7. Por que modelos tradicionais falham?
+
+Redes neurais tradicionais, como MLPs, recebem entradas fixas e produzem saídas.
+
+Elas não têm uma memória interna natural.
 
 Modelos como redes densas (MLP):
 
@@ -541,6 +660,37 @@ Modelos como redes densas (MLP):
 * Não entendem sequência
 
 👉 Eles tratam cada ponto como independente
+
+---
+
+## Exemplo de frase
+
+Considere a frase:
+
+> “O paciente tomou o remédio porque estava com dor.”
+
+Para entender a frase, precisamos considerar a sequência das palavras.
+
+Se analisarmos cada palavra isoladamente, perdemos o contexto.
+
+---
+
+## Exemplo de série temporal
+
+Temperatura de uma máquina:
+
+| Tempo | Temperatura |
+|---|---:|
+| t1 | 70°C |
+| t2 | 72°C |
+| t3 | 75°C |
+| t4 | 80°C |
+
+O problema não é apenas a temperatura atual.  
+O problema é a sequência de aumento.
+
+Uma rede tradicional pode olhar o valor 80°C isoladamente.  
+Uma rede recorrente tenta entender que a temperatura vem subindo.
 
 ---
 
@@ -554,21 +704,123 @@ As RNNs foram criadas para resolver isso.
 * Usar memória passada
 * Atualizar memória
 
+As **RNNs**, ou Redes Neurais Recorrentes, foram criadas para lidar com dados sequenciais.
+
+A ideia central é simples:
+
+> A rede recebe o dado atual e também leva em consideração uma memória do passado.
+
+---
+
+## Como uma RNN funciona?
+
+A cada instante de tempo, a RNN recebe:
+
+1. A entrada atual;
+2. O estado oculto anterior, que representa a memória acumulada.
+
+Depois disso, ela gera:
+
+1. Um novo estado oculto;
+2. Uma saída, quando necessário.
+
 ---
 
 ## 🧮 Equação fundamental
 
 h_t = f(W x_t + U h_{t-1} + b)
 
----
-
 ## 📌 Interpretação:
 
-* `xₜ` → entrada atual
-* `hₜ₋₁` → memória passada
-* `hₜ` → nova memória
+* `xₜ` → é o dado atual
+* `hₜ₋₁` → é a memória anterior
+* `hₜ` → é a nova memória
+* `W` e `U` são pesos aprendidos
+* `b` é o viés
+* `f` é uma função de ativação, como tanh ou ReLU.
+  
+---
+
+## Analogia: RNN como uma pessoa lendo um texto
+
+Quando você lê um texto, não interpreta cada palavra isoladamente.
+
+Você lembra do que leu antes.
+
+Ao ler a frase:
+
+> “O carro parou porque o sinal estava vermelho.”
+
+A palavra “vermelho” faz sentido porque você lembra de “sinal”.
+
+A RNN tenta fazer algo parecido: usar contexto anterior para interpretar o dado atual.
+
+---
 
 👉 A rede aprende padrões ao longo do tempo
+
+---
+
+# 9. Forward pass em RNN
+
+O **forward pass** é o processo em que os dados passam pela rede para gerar uma previsão.
+
+## Exemplo
+
+Suponha uma sequência de temperaturas:
+
+```text
+22.1, 22.3, 22.5, 22.8
+```
+
+A RNN processa assim:
+
+1. Recebe 22.1 e cria uma memória inicial;
+2. Recebe 22.3 e atualiza a memória;
+3. Recebe 22.5 e atualiza novamente;
+4. Recebe 22.8 e usa a memória acumulada para prever o próximo valor.
+
+A previsão pode ser, por exemplo:
+
+```text
+23.0
+```
+
+# 10. Backpropagation Through Time — BPTT
+
+Para uma RNN aprender, ela precisa ajustar seus pesos.
+
+Isso é feito por meio de uma adaptação da retropropagação tradicional chamada **Backpropagation Through Time**, ou BPTT.
+
+---
+
+## 10.1 Ideia simples
+
+A rede faz uma previsão.  
+Depois compara a previsão com o valor real.  
+A diferença é o erro.
+
+Esse erro volta pela rede para ajustar os pesos.
+
+Como a RNN trabalha com sequência, o erro precisa voltar no tempo.
+
+---
+
+## Analogia
+
+Imagine que uma empresa teve queda nas vendas em dezembro.
+
+Para entender o erro, você investiga os meses anteriores:
+
+- Houve menos marketing em novembro?
+- O estoque acabou em outubro?
+- O preço subiu em setembro?
+
+Você está voltando no tempo para descobrir onde ajustar a estratégia.
+
+A RNN faz algo parecido matematicamente.
+
+---
 
 ---
 
