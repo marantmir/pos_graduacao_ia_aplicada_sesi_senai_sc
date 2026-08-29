@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Flamengo",
+    "country": "Brasil",
+    "league": "Brasileirao Serie A",
+    "coach": "Tecnico",
+    "base_formation": "4-2-3-1",
+    "style": "Posse de bola, amplitude e pressao pos-perda",
+    "confidence": "Alto",
+    "status": "Analise disponivel",
+    "category": "Masculino"
+  },
+  {
+    "id": 2,
+    "name": "Palmeiras",
+    "country": "Brasil",
+    "league": "Brasileirao Serie A",
+    "coach": "Tecnico",
+    "base_formation": "4-3-3",
+    "style": "Transicao rapida, intensidade fisica e compactacao defensiva",
+    "confidence": "Medio",
+    "status": "Analise disponivel",
+    "category": "Masculino"
+  },
+  {
+    "id": 3,
+    "name": "Corinthians",
+    "country": "Brasil",
+    "league": "Brasileirao Serie A",
+    "coach": "Tecnico",
+    "base_formation": "4-4-2",
+    "style": "Bloco medio, ataque direto e jogo pelos corredores",
+    "confidence": "Medio",
+    "status": "Analise disponivel",
+    "category": "Masculino"
+  },
+  {
+    "id": 4,
+    "name": "Sao Paulo",
+    "country": "Brasil",
+    "league": "Brasileirao Serie A",
+    "coach": "Tecnico",
+    "base_formation": "4-2-3-1",
+    "style": "Construcao apoiada, triangulacoes e pressao coordenada",
+    "confidence": "Alto",
+    "status": "Analise disponivel",
+    "category": "Masculino"
+  },
+  {
+    "id": 5,
+    "name": "Fluminense",
+    "country": "Brasil",
+    "league": "Brasileirao Serie A",
+    "coach": "Tecnico",
+    "base_formation": "4-2-2-2",
+    "style": "Posse curta, aproximacoes e superioridade no centro",
+    "confidence": "Medio",
+    "status": "Analise disponivel",
+    "category": "Masculino"
+  },
+  {
+    "id": 6,
+    "name": "Manchester City",
+    "country": "Inglaterra",
+    "league": "Premier League",
+    "coach": "Tecnico",
+    "base_formation": "3-2-4-1",
+    "style": "Controle territorial, pressao alta e ocupacao racional dos espacos",
+    "confidence": "Alto",
+    "status": "Analise disponivel",
+    "category": "Masculino"
+  },
+  {
+    "id": 7,
+    "name": "Real Madrid",
+    "country": "Espanha",
+    "league": "La Liga",
+    "coach": "Tecnico",
+    "base_formation": "4-3-1-2",
+    "style": "Ataques verticais, mobilidade ofensiva e transicoes letais",
+    "confidence": "Alto",
+    "status": "Analise disponivel",
+    "category": "Masculino"
+  },
+  {
+    "id": 8,
+    "name": "Barcelona",
+    "country": "Espanha",
+    "league": "La Liga",
+    "coach": "Tecnico",
+    "base_formation": "4-3-3",
+    "style": "Posse, circulacao curta e pressao apos perda",
+    "confidence": "Medio",
+    "status": "Analise disponivel",
+    "category": "Masculino"
+  },
+  {
+    "id": 9,
+    "name": "Liverpool",
+    "country": "Inglaterra",
+    "league": "Premier League",
+    "coach": "Tecnico",
+    "base_formation": "4-3-3",
+    "style": "Pressao alta, ataques rapidos e cruzamentos agressivos",
+    "confidence": "Alto",
+    "status": "Analise disponivel",
+    "category": "Masculino"
+  },
+  {
+    "id": 10,
+    "name": "Bayern de Munique",
+    "country": "Alemanha",
+    "league": "Bundesliga",
+    "coach": "Tecnico",
+    "base_formation": "4-2-3-1",
+    "style": "Dominio territorial, amplitude e chegada forte na area",
+    "confidence": "Medio",
+    "status": "Analise disponivel",
+    "category": "Masculino"
+  }
+]
