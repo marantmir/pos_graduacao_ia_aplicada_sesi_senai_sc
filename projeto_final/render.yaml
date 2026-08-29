@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: football-intelligence-free
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: FOOTBALL_INTEL_FREE_MODE
+        value: "1"
+      - key: FOOTBALL_INTEL_MAX_UPLOAD_MB
+        value: "80"
+      - key: FOOTBALL_INTEL_LLM_ENABLED
+        value: "1"
+      - key: FOOTBALL_INTEL_LLM_PROVIDER
+        value: google_gemini
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash-lite
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: FOOTBALL_INTEL_LLM_TIMEOUT_SECONDS
+        value: "18"
+      - key: FOOTBALL_INTEL_TRUST_PROXY
+        value: "1"
