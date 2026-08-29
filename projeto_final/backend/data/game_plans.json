@@ -1,0 +1,103 @@
+﻿[
+  {
+    "team_id": 1,
+    "how_to_press": "Direcionar a saida para o lateral direito e acionar pressao quando o passe voltar para o zagueiro.",
+    "where_to_attack": "Explorar inversoes rapidas para atacar o espaco as costas do lateral avancado.",
+    "players_to_neutralize": ["Meia Rubro 10", "Atacante Rubro 9"],
+    "weaknesses_to_exploit": ["Segundo pau", "Saida curta sob pressao", "Espaco atras dos laterais"],
+    "training_suggestions": ["Treinar pressao em gatilho lateral", "Ensaiar inversao para ponta oposto", "Simular defesa de cruzamento no segundo pau"],
+    "plan_risks": ["Se a pressao atrasar, o rival encontra meia entre linhas", "Laterais podem criar superioridade se receberem de frente"],
+    "in_match_adjustments": ["Baixar bloco apos vantagem", "Adicionar volante se o meia rival receber livre", "Atacar lado oposto apos tres passes curtos"]
+  },
+  {
+    "team_id": 2,
+    "how_to_press": "Evitar duelo fisico frontal e pressionar com cobertura para impedir primeira bola vertical.",
+    "where_to_attack": "Atacar o intervalo entre lateral e zagueiro depois de circular a bola de um lado ao outro.",
+    "players_to_neutralize": ["Ponta Verde 7", "Meia Verde 8"],
+    "weaknesses_to_exploit": ["Espaco apos basculacao", "Dificuldade contra posse longa", "Linha exposta em troca de corredor"],
+    "training_suggestions": ["Treinar posse sob pressao", "Ensaiar ataque ao lado fraco", "Proteger rebotes defensivos"],
+    "plan_risks": ["Perder segunda bola perto da area", "Permitir contra-ataques em campo aberto"],
+    "in_match_adjustments": ["Reduzir perdas no meio", "Usar zagueiro livre para atrair pressao", "Controlar faltas laterais"]
+  },
+  {
+    "team_id": 3,
+    "how_to_press": "Bloquear passe direto no atacante de referencia e forcar jogo pelo lateral menos construtor.",
+    "where_to_attack": "Circular por fora para abrir a linha de quatro e acelerar no espaco entre lateral e zagueiro.",
+    "players_to_neutralize": ["Meia Alvinegro 10", "Volante Alvinegro 5"],
+    "weaknesses_to_exploit": ["Espaco entre linhas", "Lado fraco apos basculacao", "Saida longa previsivel"],
+    "training_suggestions": ["Treinar controle de segunda bola", "Ensaiar infiltracao de meia", "Ajustar marcacao em bolas longas"],
+    "plan_risks": ["Entrar em jogo fisico de duelos", "Ceder escanteios em sequencia"],
+    "in_match_adjustments": ["Aumentar amplitude se o bloco fechar", "Usar meia entre linhas", "Aproximar volante para rebote"]
+  },
+  {
+    "team_id": 4,
+    "how_to_press": "Pressionar o primeiro volante de costas e fechar linha de passe para o meia central.",
+    "where_to_attack": "Atacar o lado oposto ao triangulo principal assim que a equipe concentrar muitos jogadores no corredor.",
+    "players_to_neutralize": ["Meia Tricolor 10", "Atacante Tricolor 9"],
+    "weaknesses_to_exploit": ["Primeiro passe pressionado", "Inversoes contra lateral alto", "Espaco atras dos interiores"],
+    "training_suggestions": ["Treinar encaixe no volante", "Ensaiar virada rapida", "Simular defesa de tabelas curtas"],
+    "plan_risks": ["Ser atraido para o lado da bola", "Permitir passe de ruptura no meia"],
+    "in_match_adjustments": ["Compactar corredor central", "Trocar ponta se lateral adversario dominar", "Baixar linha se houver ruptura constante"]
+  },
+  {
+    "team_id": 5,
+    "how_to_press": "Pressionar por fora para impedir que o rival jogue com muitos apoios curtos por dentro.",
+    "where_to_attack": "Explorar corredores externos e acelerar apos recuperar bola no centro.",
+    "players_to_neutralize": ["Meia Flu 8", "Volante Flu 5"],
+    "weaknesses_to_exploit": ["Perdas por dentro", "Corredores externos livres", "Transicao defensiva se a posse quebra"],
+    "training_suggestions": ["Treinar armadilha no passe interior", "Ensaiar contra-ataque pelo lado", "Ajustar cobertura contra terceiro homem"],
+    "plan_risks": ["Correr atras da bola por longos periodos", "Abrir espaco se a pressao for individual demais"],
+    "in_match_adjustments": ["Alternar bloco medio e alto", "Usar ponta aberto no lado fraco", "Adicionar volante para fechar passe interior"]
+  },
+  {
+    "team_id": 6,
+    "how_to_press": "Selecionar momentos de pressao e fechar passe no meia entre linhas, evitando sair desordenado contra a posse.",
+    "where_to_attack": "Buscar bola longa diagonal nas costas da linha alta e atacar segunda bola.",
+    "players_to_neutralize": ["Meia City 17", "Atacante City 9"],
+    "weaknesses_to_exploit": ["Profundidade nas costas", "Espaco apos inversao", "Linha alta contra atacantes velozes"],
+    "training_suggestions": ["Treinar temporizacao defensiva", "Ensaiar lancamentos diagonais", "Coordenar segunda bola ofensiva"],
+    "plan_risks": ["Defender baixo por tempo excessivo", "Permitir recuperacao alta apos perda"],
+    "in_match_adjustments": ["Aproximar linhas se o meia receber livre", "Alternar saida curta e longa", "Usar atacante rapido no segundo tempo"]
+  },
+  {
+    "team_id": 7,
+    "how_to_press": "Fechar conducoes centrais e orientar o ataque rival para zonas laterais com cobertura dupla.",
+    "where_to_attack": "Criar amplitude para explorar espacos concedidos pelos corredores e cruzar rasteiro atras da linha.",
+    "players_to_neutralize": ["Meia Madrid 10", "Atacante Madrid 7"],
+    "weaknesses_to_exploit": ["Largura concedida", "Espaco entre volantes", "Recomposicao apos conducoes longas"],
+    "training_suggestions": ["Treinar dobra em condutor central", "Ensaiar cruzamento rasteiro", "Controlar transicao com falta tÃ¡tica limpa"],
+    "plan_risks": ["Permitir campo aberto", "Perder bola com equipe aberta"],
+    "in_match_adjustments": ["Baixar lateral do lado da bola", "Usar volante de cobertura", "Atacar lado oposto ao meia livre"]
+  },
+  {
+    "team_id": 8,
+    "how_to_press": "Impedir que interiores recebam de frente e acionar pressao quando o zagueiro buscar passe lateral.",
+    "where_to_attack": "Atacar profundidade nas costas da linha alta apos atrair o bloco para um lado.",
+    "players_to_neutralize": ["Meia Barca 8", "Ponta Barca 11"],
+    "weaknesses_to_exploit": ["Linha alta", "Duelos fisicos", "Espaco atras dos interiores"],
+    "training_suggestions": ["Treinar bola longa nas costas", "Ensaiar cobertura contra ponta em um contra um", "Simular saida sob pressao pos-perda"],
+    "plan_risks": ["Ser sufocado apos perder a bola", "Nao conseguir sair do primeiro terco"],
+    "in_match_adjustments": ["Usar goleiro na saida", "Acelerar apos recuperar", "Trocar ponta para atacar defensor amarelado"]
+  },
+  {
+    "team_id": 9,
+    "how_to_press": "Sair da primeira pressao com apoio curto e passe de seguranca, evitando perda central.",
+    "where_to_attack": "Explorar costas dos laterais quando eles sobem para criar cruzamentos.",
+    "players_to_neutralize": ["Ponta Reds 11", "Lateral Reds 66"],
+    "weaknesses_to_exploit": ["Espaco atras dos laterais", "Pressao quebrada", "Queda fisica nos minutos finais"],
+    "training_suggestions": ["Treinar saida apoiada contra pressao", "Ensaiar bola no corredor lateral", "Preparar substituicoes de velocidade"],
+    "plan_risks": ["Perdas no campo defensivo", "Ceder cruzamentos em sequencia"],
+    "in_match_adjustments": ["Atrair pressao e inverter", "Reduzir ritmo quando necessario", "Adicionar lateral defensivo se o cruzamento rival crescer"]
+  },
+  {
+    "team_id": 10,
+    "how_to_press": "Pressionar laterais antes do cruzamento e proteger a entrada da area contra rebotes.",
+    "where_to_attack": "Atacar o espaco entre lateral avancado e zagueiro com pontas diagonais.",
+    "players_to_neutralize": ["Atacante Bayern 9", "Meia Bayern 10"],
+    "weaknesses_to_exploit": ["Transicao defensiva lateral", "Espaco entre lateral e zagueiro", "Dependencia de cruzamentos"],
+    "training_suggestions": ["Treinar defesa de area em cruzamentos", "Ensaiar contra-ataque pelo corredor", "Ajustar cobertura do volante no lado da bola"],
+    "plan_risks": ["Perder duelos aereos", "Recuar demais e sofrer volume"],
+    "in_match_adjustments": ["Baixar ponta para dobrar lateral", "Usar atacante veloz na transicao", "Fechar corredor antes do cruzamento"]
+  }
+]
+
